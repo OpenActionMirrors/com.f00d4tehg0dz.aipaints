@@ -1,32 +1,14 @@
 {
-	"SDKVersion": 2,
-	"Author": "f00d4tehg0dz",
-	"CodePath": "app.html",
-	"Description": "Create AI generated images with a click of a button!",
 	"Name": "AI Paints",
-	"Icon": "actions/template/assets/action",
-	"URL": "https://github.com/f00d4tehg0dz/elgato-streamdeck-ai-paints",
-	"Version": "1.0.5.0",
-	"Software": {
-		"MinimumVersion": "6.9"
-	},
-	"OS": [
-		{
-			"Platform": "mac",
-			"MinimumVersion": "10.11"
-		},
-		{
-			"Platform": "windows",
-			"MinimumVersion": "10"
-		}
-	],
-	"Category": "AI Paints",
-	"CategoryIcon": "actions/template/assets/category",
-	"UUID": "com.f00d4tehg0dz.aipaints",
+	"Version": "1.0.6.0",
+	"Author": "f00d4tehg0dz",
 	"Actions": [
 		{
-			"Icon": "actions/template/assets/actionimage",
 			"Name": "Generate",
+			"UUID": "com.f00d4tehg0dz.aipaints.action",
+			"Icon": "actions/template/assets/actionimage",
+			"Tooltip": "Install me for AI Generative actions",
+			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html",
 			"Controllers": [
 				"Keypad",
 				"Encoder"
@@ -42,10 +24,31 @@
 				{
 					"Image": "actions/template/assets/action"
 				}
-			],
-			"Tooltip": "Install me for AI Generative actions",
-			"UUID": "com.f00d4tehg0dz.aipaints.action",
-			"PropertyInspectorPath": "actions/template/property-inspector/inspector.html"
+			]
 		}
-	]
+	],
+	"Category": "AI Paints",
+	"CategoryIcon": "actions/template/assets/category",
+	"CodePath": "app.html",
+	"Description": "Create AI generated images with a click of a button!",
+	"Icon": "actions/template/assets/action",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.f00d4tehg0dz.aipaints"
 }
