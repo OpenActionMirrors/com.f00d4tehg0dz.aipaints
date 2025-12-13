@@ -105,7 +105,7 @@ async function generateImageFromHuggingFace(context, positivePrompt, negativePro
 
     switch (model) {
       case 'flux':
-        apiUrl = 'https://api-inference.huggingface.co/models/black-forest-labs/FLUX.1-dev';
+        apiUrl = 'https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev';
         payload = {
           inputs: positivePrompt + (negativePrompt ? ` Negative prompt: ${negativePrompt}` : ''),
           parameters: {
@@ -117,7 +117,7 @@ async function generateImageFromHuggingFace(context, positivePrompt, negativePro
         };
         break;
       case 'sd':
-        apiUrl = 'https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0';
+        apiUrl = 'https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0';
         payload = {
           inputs: positivePrompt + (negativePrompt ? ` Negative prompt: ${negativePrompt}` : ''),
           parameters: {
